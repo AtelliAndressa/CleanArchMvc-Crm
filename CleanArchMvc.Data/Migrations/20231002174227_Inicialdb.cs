@@ -5,7 +5,7 @@
 namespace CleanArchMvc.Infra.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class Inicial : Migration
+    public partial class Inicialdb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

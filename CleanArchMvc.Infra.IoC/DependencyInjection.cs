@@ -16,9 +16,9 @@ namespace CleanArchMvc.Infra.IoC
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
-            var defaultConnectionString = configuration.GetConnectionString("DefaultConnection");
+            
             services.AddDbContext<ApplicationDbContext>(options => 
-                options.UseSqlServer(defaultConnectionString,
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
                 b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 
             services.AddScoped<ICategoryRepository, CategoryRepository>(); 

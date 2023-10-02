@@ -1,6 +1,4 @@
 using CleanArchMvc.Infra.IoC;
-using FluentAssertions.Common;
-using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
