@@ -17,6 +17,8 @@ namespace CleanArchMvc.Domain.Entities
             ValidationDomain(name);
         }
 
+        public string Name { get; protected set; }
+
         public List<Product> Products { get; set;}
 
 
