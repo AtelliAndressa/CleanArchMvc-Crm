@@ -1,9 +1,4 @@
 ﻿using CleanArchMvc.Application.DTOs;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CleanArchMvc.Application.Interfaces
 {
@@ -13,12 +8,12 @@ namespace CleanArchMvc.Application.Interfaces
 
         Task<ProductDTO> GetById(int id);
 
-        Task<ProductDTO> GetProductCategory(int? id);
+        Task<ProductDTO> GetProductCategory(int id);
 
         Task Add(ProductDTO productDTO);
 
         Task Update(ProductDTO productDTO);
 
-        Task Delete(int? id);
+        Task Delete(int id);
     }
 }
