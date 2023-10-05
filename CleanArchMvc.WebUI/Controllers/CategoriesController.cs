@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchMvc.WebUI.Controllers
 {
+    [Controller]
     public class CategoriesController : Controller
     {
         private readonly ICategoryService _categoryService;
